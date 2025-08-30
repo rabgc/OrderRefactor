@@ -1,0 +1,15 @@
+\
+repos:
+  - repo: https://github.com/pre-commit/mirrors-clang-format
+    rev: v17.0.6
+    hooks:
+      - id: clang-format
+        files: \.(h|hpp|hh|hxx|cpp|cc|cxx|c\+\+|C)$
+
+  - repo: local
+    hooks:
+      - id: build-and-test-quick
+        name: Build & Test (quick)
+        entry: bash scripts/build-and-test.sh --mode quick --build-type Debug
+        language: system
+        pass_filenames: false
