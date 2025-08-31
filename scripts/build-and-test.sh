@@ -61,6 +61,7 @@ fi
 echo "==> Config: MODE=${MODE} BUILD_TYPE=${BUILD_TYPE} JOBS=${JOBS} SANITIZE=${SANITIZE} COVERAGE=${COVERAGE}"
 echo "==> BUILD_DIR=${BUILD_DIR}"
 
+CMAKE_ARGS=("${CMAKE_ARGS[@]:-}") 
 cmake -S . -B "${BUILD_DIR}" "${CMAKE_CACHE_FLAGS[@]}" "${CMAKE_ARGS[@]}"
 cmake --build "${BUILD_DIR}" -j "${JOBS}"
 ctest --test-dir "${BUILD_DIR}" "${CTEST_ARGS[@]}"

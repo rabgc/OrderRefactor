@@ -1,6 +1,6 @@
 # Order Refactoring Kata (C++ / CMake / GoogleTest)
 
-A self-contained kata to practice **refactoring with tests as guardrails**.
+A self-contained kata to practice refactoring with tests as guardrails.
 
 ## Quick start
 

@@ -1,4 +1,4 @@
-# TEST STRUCTURE REMINDER:
+# TEST STRUCTURE:
 # - Individual tests are auto-discovered from order_tests.cpp using gtest_discover_tests.
 # - Grouped tests (order_smoke, order_unit, order_integration) are registered manually.
 #   Each grouped test runs all tests in a suite (e.g., Smoke.*) using GoogleTest's filter.
